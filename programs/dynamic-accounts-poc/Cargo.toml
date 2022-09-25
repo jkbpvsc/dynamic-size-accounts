@@ -1,0 +1,23 @@
+[package]
+name = "dynamic-accounts-poc"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "dynamic_accounts_poc"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.25.0"
+bytemuck = "1.12.1"
+arrayref = "0.3.6"
+# solana-sdk = "1.10"
+solana-program = "1.10"
